@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="js/main.js"></script>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>GA Time Converter</title>
+</head>
+
+<body>
+  <nav>
+    <h2>Please, be back at: </h2>
+    <div class="time-setup">
+      <!-- <input type="datetime" name="" id="time-input"> -->
+      <input type="time" id="time-input" name="appt" required>
+      <button type="submit" id="submit">submit</button>
+
+    </div>
+  </nav>
+
+  <div class="timezone">
+    <div class="timezone-wrapper">
+      <div class="timeblock">
+        <span class="timezone-label">PACIFIC</span>
+        <span id="pacific"></span>
+      </div>
+
+      <img src="img/GA-logo.png" alt="">
+
+      <div class="timeblock">
+        <span class="timezone-label">EASTERN</span>
+        <span id="eastern"></span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
