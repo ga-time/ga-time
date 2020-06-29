@@ -1,5 +1,4 @@
 body, html {
-  /* font-size: 150%; */
   font-family: monospace;
   color: #222;
   margin: 0;
@@ -18,10 +17,14 @@ nav {
   align-items: center;
 }
 
+select {
+  height: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 3px 3px rgba(0,0,0,0.2);
+}
+
 #options {
   width: 100%;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
@@ -101,6 +104,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+button {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 3px 3px rgba(0,0,0,0.2);
+
 }
 
 @media only screen and (max-width: 1000px) {

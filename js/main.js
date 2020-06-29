@@ -11,6 +11,15 @@ let timeZones = {
   'Australian Eastern Time': ['en-US', 'Australia/Melbourne'] //BUG
 };
 
+//Set default laptop time
+let timeInput = document.getElementById('time-input');
+var date = new Date();
+var currentDate = date.toISOString().slice(0, 10);
+var currentTime = date.getHours() + ':' + date.getMinutes();
+
+// document.getElementById('currentDate').value = currentDate;
+document.getElementById('time-input').value = currentTime;
+
 function fromLocalDateToUtcDate(date, ianatz) {
   // suppose the date is 12:00 UTC
   var invdate = new Date(date.toLocaleString('en-US', {
@@ -68,3 +77,10 @@ function handleSubmit() {
 
 let submitBtn = document.getElementById('submit');
 submitBtn.addEventListener('click', handleSubmit);
+
+//Add evenListener on 'Enter'
+timeInput.addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    handleSubmit();
+  }
+});
