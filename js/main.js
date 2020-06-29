@@ -13,9 +13,15 @@ let timeZones = {
 
 //Set default laptop time
 let timeInput = document.getElementById('time-input');
-var date = new Date();
-var currentDate = date.toISOString().slice(0, 10);
-var currentTime = date.getHours() + ':' + date.getMinutes();
+let date = new Date();
+let currentDate = date.toISOString().slice(0, 10);
+let hours = date.getHours();
+if (hours < 10) {
+  hours = '0' + hours;
+};
+
+let currentTime = hours + ':' + date.getMinutes();
+console.log(currentTime)
 
 // document.getElementById('currentDate').value = currentDate;
 document.getElementById('time-input').value = currentTime;
