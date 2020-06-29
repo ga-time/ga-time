@@ -118,6 +118,11 @@ button {
   h2{
     font-size: 30px;
   }
+
+  #options {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -133,5 +138,10 @@ button {
   }
   img {
     width: 100px
+  }
+
+  #options {
+   display: flex;
+   flex-direction: column;
   }
 }
