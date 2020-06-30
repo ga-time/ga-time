@@ -1,3 +1,10 @@
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 20px;
+}
+
 .timezone {
   display: flex;
   flex-wrap: wrap;
@@ -16,8 +23,33 @@
   min-width: 25%;
   height: 100px;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 span {
+  font-size: 30px;
+}
+
+.timezone-label {
+  color: gray;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  span {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .timezone-label {
+    font-size: 10px;
+  }
+
+  span {
+    font-size: 10px;
+  }
 }
