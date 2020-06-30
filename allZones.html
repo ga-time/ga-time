@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="js/allZones.js"></script>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/allZonesStyles.css">
+  <title>GA Time Converter</title>
+  <link rel="icon" href="img/GA-logo.png" type="img/icon type">
+</head>
+
+<body>
+  <nav>
+    <div id="options">
+      <div>
+        <label for="from">From:</label>
+        <select name="from" id="fromTimezones">
+          <option value="Pacific Time">Pacific Time</option>
+          <option value="Eastern Time">Eastern Time</option>
+          <option value="Central Time">Central Time</option>
+          <option value="Mountain Standard Time">Mountain Standard Time</option>
+          <option value="Mountain Daylight Time">Mountain Daylight Time</option>
+          <option value="British Time">British Time</option>
+          <option value="Central European">Central European</option>
+          <option value="Singapore Standard Time">Singapore Standard Time</option>
+          <option value="Australian Eastern Time">Australian Eastern Time</option>
+        </select>
+      </div>
+    </div>
+    <div class="time-setup">
+      <input type="time" id="time-input" name="appt" required>
+      <button type="submit" id="submit">submit</button>
+    </div>
+    <h2>Please, be back at: </h2>
+  </nav>
+  <main>
+    <div class="timezone">
+      <div class="timezone-wrapper">
+        <div class="timeblock">
+          <span class="timezone-label" id="from-label"></span>
+          <span id="from">Pacific</span>
+        </div>
+
+        <div class="timeblock">
+          <span class="timezone-label" id="to-label"></span>
+          <span id="to">Eastern</span>
+        </div>
+
+        <div class="timeblock">
+          <span class="timezone-label" id="to-label"></span>
+          <span id="to">Central</span>
+        </div>
+
+        <div class="timeblock">
+          <span class="timezone-label" id="from-label"></span>
+          <span id="from">Mountain Standard</span>
+        </div>
+
+        <div class="timeblock">
+          <span class="timezone-label" id="from-label"></span>
+          <span id="from">Mountain Daylight</span>
+        </div>
+
+        <div class="timeblock">
+          <span class="timezone-label" id="from-label"></span>
+          <span id="from">British</span>
+        </div>
+        <div class="timeblock">
+          <span class="timezone-label" id="from-label"></span>
+          <span id="from">European</span>
+        </div>
+        <div class="timeblock">
+          <span class="timezone-label" id="from-label"></span>
+          <span id="from">Singapore Standard</span>
+        </div>
+        <div class="timeblock">
+          <span class="timezone-label" id="from-label"></span>
+          <span id="from">Australian Eastern</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>2020 | by <a href="https://liatsernant.github.io" target="_blank">Yulia Tsernant</a></p>
+  </footer>
+</body>
+
+</html>
