@@ -21,7 +21,6 @@ if (hours < 10) {
 };
 
 let currentTime = hours + ':' + date.getMinutes();
-console.log(currentTime)
 
 // document.getElementById('currentDate').value = currentDate;
 document.getElementById('time-input').value = currentTime;
