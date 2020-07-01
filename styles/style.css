@@ -9,7 +9,7 @@ body, html {
 }
 
 nav {
-  margin-top: 60px;
+  margin-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -58,6 +58,10 @@ input {
   font-family: monospace;
   width: 100%;
   min-height: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
 }
 
 .timezone-wrapper {
@@ -95,6 +99,16 @@ span {
   margin: 10px;
 }
 
+h5 {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+h5:hover {
+  color: rgb(112, 112, 112);
+}
+
 footer {
   flex-shrink: 0;
   width: 100%;
@@ -115,7 +129,7 @@ button {
   body, span {
     font-size: 20px;
   }
-  h2{
+  h2 {
     font-size: 30px;
   }
 

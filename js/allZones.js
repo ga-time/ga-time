@@ -19,8 +19,12 @@ let hours = date.getHours();
 if (hours < 10) {
   hours = '0' + hours;
 };
+let minutes = date.getMinutes();
+if (minutes < 10) {
+  minutes = '0' + minutes;
+}
 
-let currentTime = hours + ':' + date.getMinutes();
+let currentTime = hours + ':' + minutes;
 
 // document.getElementById('currentDate').value = currentDate;
 document.getElementById('time-input').value = currentTime;
@@ -70,25 +74,8 @@ function handleSubmit() {
     let timeZomeTo = timeZones[key][1];
     let toTimeStr = utcTime.toLocaleTimeString(localeTo, { timeZone: timeZomeTo })
     timeElement.textContent = toTimeStr;
-  }
-
-//   //Get value TO zone
-//   let optionToValue = document.getElementById('toTimezones').value;
-//   let localeTo = timeZones[optionToValue][0];
-//   let timeZomeTo = timeZones[optionToValue][1];
-//   //Get TO time from UTC as string
-//   let toTimeStr = utcTime.toLocaleTimeString(localeTo, { timeZone: timeZomeTo })
-
-//   //Set FROM and TO to HTML page
-//   let fromEl = document.getElementById('from');
-//   fromEl.textContent = fromTimeStr;
-//   let toEl = document.getElementById('to');
-//   toEl.textContent = toTimeStr;
-
-//   //Set lables with time zones
-//   document.getElementById('from-label').textContent = optionFromValue;
-//   document.getElementById('to-label').textContent = optionToValue;
-}
+  };
+};
 
 let submitBtn = document.getElementById('submit');
 submitBtn.addEventListener('click', handleSubmit);
