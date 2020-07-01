@@ -20,7 +20,13 @@ if (hours < 10) {
   hours = '0' + hours;
 };
 
-let currentTime = hours + ':' + date.getMinutes();
+let minutes = date.getMinutes();
+if (minutes < 10) {
+  minutes = '0' + minutes;
+}
+
+
+let currentTime = hours + ':' + minutes;
 
 // document.getElementById('currentDate').value = currentDate;
 document.getElementById('time-input').value = currentTime;
