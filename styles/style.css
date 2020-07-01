@@ -103,6 +103,7 @@ h5 {
   font-size: 15px;
   color: rgb(0, 0, 0);
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 h5:hover {
