@@ -130,6 +130,7 @@ button {
   body, span {
     font-size: 20px;
   }
+  
   h2 {
     font-size: 30px;
   }
@@ -138,16 +139,26 @@ button {
     display: flex;
     flex-direction: column;
   }
+
+  #options div {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   nav {
-    margin-top: 20px;
+    margin-top: 10px;
   }
-  
-  .timezone-label {
+
+  .timezone-label, h5 {
     font-size: 10px;
   }
+
+  h5 {
+    margin-bottom: 10px;
+  }
+
   body, span {
     font-size: 15px;
   }
@@ -155,12 +166,22 @@ button {
   h2 {
     font-size: 20px;
   }
+
   img {
-    width: 100px
+    width: 100px;
   }
 
   #options {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #options div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    height: 30px;
   }
 }
