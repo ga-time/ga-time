@@ -7,8 +7,8 @@ let timeZones = {
   'Mountain Daylight Time': ['en-US', 'America/Denver'],
   'British Time': ['en-US', 'UTC'],
   'Central European': ['en-US', 'Europe/Paris'],
-  'Singapore Standard Time': ['en-US', 'Asia/Singapore'], //BUG
-  'Australian Eastern Time': ['en-US', 'Australia/Melbourne'] //BUG
+  'Singapore Standard Time': ['en-US', 'Asia/Singapore'],
+  'Australian Eastern Time': ['en-US', 'Australia/Melbourne']
 };
 
 //Set default laptop time
@@ -24,7 +24,6 @@ let minutes = date.getMinutes();
 if (minutes < 10) {
   minutes = '0' + minutes;
 }
-
 
 let currentTime = hours + ':' + minutes;
 
